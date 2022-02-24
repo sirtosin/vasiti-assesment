@@ -1,0 +1,66 @@
+.navbar__container {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6em;
+}
+
+.navbar__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar__links ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 2em;
+  font-weight: bold;
+  font-family: var(--nav-font-family);
+  cursor: pointer;
+  font-size: 13px;
+}
+.navbar__links ul li .signup {
+  height: 32px;
+  width: 84px;
+  background: var(--color-vendor2);
+  border: none;
+  outline: none;
+  box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  .navbar__container {
+    padding: 0 2em;
+  }
+
+ 
+}
+
+@media screen and (max-width: 550px) {
+  .navbar__container {
+    padding: 0 2em;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+}

@@ -1,0 +1,169 @@
+.customer__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 636px;
+  width: 100%;
+  background: #222222;
+  z-index: 99;
+}
+
+.customer__image {
+  flex-basis: 30%;
+}
+
+.customer__image .ellipse {
+  position: absolute;
+  width: 631px;
+  height: 631px;
+  left: 100px;
+  top: 50px;
+  border-radius: 50%;
+  background: #2e2e2e;
+}
+
+.customer__image .img {
+  position: absolute;
+  width: 617px;
+  height: 572px;
+  left: 80px;
+  top: 60px;
+  background: url(../../assets/black-beautiful-ladies-smiling.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.customer__text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 47%;
+  padding: 0 5em;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.customer__text h2 {
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+}
+
+.customer__text button {
+  width: 95px;
+  height: 30px;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  background: transparent;
+  letter-spacing: 0.02em;
+}
+
+.customer__text p {
+  margin-top: 2em;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 150%;
+
+  letter-spacing: 0.02em;
+}
+
+.customer__text h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+.customer__text .line {
+  margin-top: -8px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  .customer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .customer__image .img {
+    position: absolute;
+    width: 317px;
+    height: 372px;
+    left: 50px;
+    top: 43em;
+  }
+
+  .customer__image .ellipse {
+    width: 331px;
+    height: 331px;
+    top: 43em;
+    left: 2.5em;
+  }
+  .customer__text p {
+    margin-top: 1em;
+
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .customer__container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 9em;
+    height: 1036px;
+    padding: 8em 0;
+  }
+ 
+  .customer__image .img {
+    position: absolute;
+    width: 317px;
+    height: 372px;
+    left: 50px;
+    top: 40em;
+  }
+  .customer__image .ellipse {
+    width: 331px;
+    height: 331px;
+    top: 40em;
+    left: 2.5em;
+  }
+
+  .customer__text p {
+    margin-top: 1em;
+
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .customer__text h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    letter-spacing: 0.05em;
+  }
+  .customer__text h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+}
