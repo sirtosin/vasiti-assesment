@@ -1,0 +1,53 @@
+.bannner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bannner__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.bannner__text h2 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+
+  letter-spacing: -0.03em;
+}
+.bannner__text p {
+  font-family: var(--nav-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.bannner__text .input {
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+.bannner__text .input button {
+  border: none;
+  outline: none;
+background: #FFFFFF;
+box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
+border-radius: 4px;
+}
+.bannner__text .input .input__text{
+    padding: 2em;
+    background: rgba(239, 88, 3, 0.2);
+
+}
+
+.bannner__text .input .input__text::placeholder{
+    color: #ffffff;
+}
+

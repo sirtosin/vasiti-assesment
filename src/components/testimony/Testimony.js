@@ -1,17 +1,25 @@
 import React from 'react'
-import image from '../../assets/Ellipse24.png'
+
 import "./Testimony.css"
-const Testimony = () => {
+const Testimony = ({image, title, text,location, customer, color,background}) => {
   return (
     <div className="testimony__container">
       <div className="testimony__content">
         <img src={image} alt="" />
-        <h2> tosin adefope</h2>
+        <h2> {title}</h2>
         <div className="testimony__location">
-          <span className="testimony__location__address"> in ikeja</span>
-          <span className="testimony__location__customer">customer</span>
+          <span className="testimony__location__address">  {location}</span>
+          <span className="testimony__location__customer" style={{
+            background: `${background}`,
+          }}>
+            <p style={{
+              color: `${color}`,
+            }}>{customer}</p>
+          </span>
         </div>
-        <p> fedn nnnjb,hcgfbnbhj,mcgfdxSDzfxcgtihokhugfcd</p>
+        <p className='text'>
+           {text}
+        </p>
       </div>
     </div>
   );

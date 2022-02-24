@@ -5,4 +5,5 @@ export { default as Header } from "./header/Header";
 export { default as Hero } from "./hero/Hero";
 export { default as Share } from "./share/Share";
 export { default as Vendor } from "./vendor/Vendor";
-export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as TestimonyTwo } from "./testimonyTwo/TestimonyTwo";
+export { default as TestimonyOne } from "./testimonyOne/TestimonyOne";

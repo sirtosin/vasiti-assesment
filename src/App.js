@@ -1,13 +1,11 @@
 import { Navbar } from "./components";
 import {
   Header,
-  Banner,
   Hero,
   Customer,
-  Vendor,
+  Vendor, 
   Footer,
-  Share,
-  Testimonials,
+  Share,TestimonyOne,TestimonyTwo
 } from "./containers";
 import "./App.css";
 
@@ -19,9 +17,9 @@ function App() {
       <Header />
       <Hero />
       <Customer />
-      <Testimonials />
+      <TestimonyOne />
       <Vendor />
-      <Banner />
+      <TestimonyTwo />
       <Footer />
     </div>
   );

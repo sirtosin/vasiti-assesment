@@ -1,0 +1,182 @@
+.vendor__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 636px;
+  width: 100%;
+  background: var(--bg-vendor2);
+  z-index: 99;
+}
+
+.vendor__image {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.vendor__image .ellipse {
+  position: absolute;
+  width: 631px;
+  height: 631px;
+  left: 40em;
+
+  top: 50px;
+  border-radius: 50%;
+  background: rgba(255, 92, 0, 0.03);
+}
+
+.vendor__image .img {
+  position: absolute;
+  width: 617px;
+  height: 572px;
+  left: 42em;
+  top: 60px;
+  background: url(../../assets/woman-shoppingbag-card.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.vendor__text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 47%;
+  padding: 0 7em;
+  margin-top: 10px;
+}
+
+.vendor__text h2 {
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.01em;
+}
+
+.vendor__text button {
+  width: 95px;
+  height: 30px;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 92, 0, 0.4);
+  border-radius: 4px;
+  color: var(--color-vendor2);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  background: transparent;
+  letter-spacing: 0.02em;
+}
+
+.vendor__text p {
+  margin-top: 2em;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 150%;
+
+  letter-spacing: 0.02em;
+}
+
+.vendor__text h4 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-vendor2);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+.vendor__text .line {
+  margin-top: -8px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+.vendor__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 636px;
+  width: 100%;
+  background: var(--bg-vendor2); 
+  z-index: 99;
+top: 25em;
+margin-top: 10em;
+margin-bottom: 20em;
+}
+  .vendor__image .img {
+    position: absolute;
+    width: 317px;
+    height: 372px;
+    left: 25em;
+    margin: 0 1em;
+    top: 4em;
+  }
+
+  .vendor__image .ellipse {
+    width: 331px;
+    height: 331px;
+    top: 5em;
+    left: 25em;
+  }
+  .vendor__text p {
+    margin-top: 1em;
+
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .vendor__container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 9em;
+    height: 890px;
+    padding: 8em 0;
+  }
+
+.vendor__container {
+  position: relative;
+   display: flex;
+    flex-direction: column-reverse;
+    margin-top: 9em;
+    height: 890px;
+    padding: 8em 0;
+  width: 100%;
+  background: var(--bg-vendor2); 
+  z-index: 99;
+top: 25em;
+margin-top: 120em;
+margin-bottom: 20em;
+}
+  .vendor__image .img {
+    position: absolute;
+    width: 317px;
+    height: 372px;
+    left: 2em;
+    margin: 0 1em;
+    top: 4em;
+  }
+
+  .vendor__image .ellipse {
+    width: 331px;
+    height: 331px;
+    top: 5em;
+    left: 3em;
+  }
+  .vendor__text {
+      padding: .4em;
+  }
+  .vendor__text p {
+    margin-top: 1em;
+
+    font-size: 12px;
+    line-height: 150%;
+  }
+}

@@ -11,6 +11,7 @@
 
 .customer__image {
   flex-basis: 30%;
+  overflow: hidden;
 }
 
 .customer__image .ellipse {
@@ -105,13 +106,14 @@
     width: 317px;
     height: 372px;
     left: 50px;
-    top: 43em;
+    margin: 0 1em;
+    top: 3em;
   }
 
   .customer__image .ellipse {
     width: 331px;
     height: 331px;
-    top: 43em;
+    top: 5em;
     left: 2.5em;
   }
   .customer__text p {
@@ -127,7 +129,7 @@
     display: flex;
     flex-direction: column-reverse;
     margin-top: 9em;
-    height: 1036px;
+    height: 890px;
     padding: 8em 0;
   }
  
@@ -136,15 +138,19 @@
     width: 317px;
     height: 372px;
     left: 50px;
-    top: 40em;
+    top: 35em;
   }
   .customer__image .ellipse {
     width: 331px;
     height: 331px;
-    top: 40em;
+    top: 35em;
     left: 2.5em;
   }
+  
 
+  .customer__text{
+    padding: 1em;
+  }
   .customer__text p {
     margin-top: 1em;
 
@@ -166,4 +172,7 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
   }
+  .customer__text {
+  padding: 0 1.4em;
+}
 }

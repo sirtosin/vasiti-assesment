@@ -95,6 +95,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0;
 }
 .hero__text {
     display: flex;
@@ -107,10 +108,10 @@
 
 }
 .hero__image .ellipse {
-  width: 400px;
+  width: 370px;
   height: 350px;
   top: 30em;
-  left: 2em;
+  left: 1em;
 }
 .hero__image .img{
    position: absolute;
@@ -119,7 +120,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
     top: 27em;
-    left: 5em;
+    left: 3em;
 }
 
 

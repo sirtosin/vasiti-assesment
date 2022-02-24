@@ -1,6 +1,6 @@
-import React from 'react'
-import vector from '../../assets/Vector.png'
-import "./Customer.css"
+import React from "react";
+import vector from "../../assets/Vector.png";
+import "./Customer.css";
 const Customer = () => {
   return (
     <div className="customer__container">
@@ -21,11 +21,11 @@ const Customer = () => {
         </p>
         <h4> Share your own story!</h4>
         <span className="line">
-          <img src={vector} alt="line"/>
+          <img src={vector} alt="line" />
         </span>
       </div>
     </div>
   );
-}
+};
 
-export default Customer
+export default Customer;
