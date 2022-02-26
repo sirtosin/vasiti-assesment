@@ -1,26 +1,23 @@
 import { Navbar } from "./components";
 import {
-  Header,
-  Hero,
-  Customer,
-  Vendor, 
-  Footer,
-  Share,TestimonyOne,TestimonyTwo
+  Header,Home,
+  Footer
 } from "./containers";
 import "./App.css";
+import { BrowserRouter ,Routes, Route} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      
-      <Navbar />
-      <Header />
-      <Hero />
-      <Customer />
-      <TestimonyOne />
-      <Vendor />
-      <TestimonyTwo />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

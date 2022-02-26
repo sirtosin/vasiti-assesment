@@ -1,0 +1,242 @@
+.share__container {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+
+.share__card aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.share__card .card {
+  width: 600px;
+  height: 600px;
+    padding: 2em;
+
+}
+.share__card .title span{
+    position: relative;
+    top: -.7em;
+    font-size: 2.5em;
+    font-weight: 800;
+    cursor: pointer;
+    color: red;
+}
+
+.share__card .title h2{
+font-family: var(--font-family);
+font-weight: bold;
+font-size: 28px;
+line-height: 34px;
+   margin-bottom: 10px;
+text-align: center;
+letter-spacing: -0.02em;
+margin: auto;
+}
+.share__card form{
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+
+}
+
+.share__card form label{
+    
+font-family: var(--nav-font-family);
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.04em;
+
+color: #676767;
+}
+
+.share__card form input{
+width: 463px;
+height: 62px;
+   margin-bottom: 10px;
+
+background: #FEFEFE;
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.share__card form textarea.textarea1{
+width: 463px;
+height: 111px;
+background: rgba(254, 254, 254, 0.3);
+border:
+ 1px solid #EAEAEA;
+box-sizing: border-box;
+border-radius: 8px;
+resize: none;
+   margin-bottom: 10px;
+padding: 1em;
+
+}
+.share__card form textarea.textarea2{
+width: 463px;
+height: 25px ;
+background: rgba(254, 254, 254, 0.3);
+border: 1px solid #EAEAEA;
+border-radius: 8px;
+resize: none;
+   margin-bottom: 10px;
+padding: .2em;
+
+}
+
+.share__card form .name{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+
+.share__card form .name input{
+width: 221px;
+height: 62px;
+    margin: 0 10px;
+padding: 1em;
+
+}
+
+.share__container .checkbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.share__card form .checkbox span{
+    flex-basis: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.share__card form aside .radio{
+    width: 14px;
+height: 14px;
+
+border: 1px solid #676767;
+margin: 5px;
+}
+.share__container .checkbox .title{
+width: 370px;
+height: 16px;
+margin-left: -1em;
+flex-basis: 68%;
+
+}
+.share__container .checkbox .title label{
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.04em;
+}
+
+
+.share__card form button{
+    width: 253px;
+height: 70px;
+border: none;
+outline: none;
+background: var(--color-vendor2);
+box-shadow: 2px 8px 30px rgba(230, 83, 0, 0.18);
+border-radius: 8px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+color: #fff;
+cursor: pointer;
+letter-spacing: 0.02em;
+margin-left: 200px;
+}
+
+.share__card form input[type="file"]{display: none;
+}
+
+.share__card form .file{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    width: 463px;
+height: 62px;
+left: 32px;
+top: 163px;
+bottom: 10px;
+background: #FEFEFE;
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+border-radius: 8px;
+
+}
+
+.share_ _card form .name input:focus,
+.share__card form textarea:focus{
+outline: 1px solid var(
+--color-vendor2);
+border: none;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 6px;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 11px;
+  border: 1px solid var(--color-vendor2);
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  content: " ";
+  display: block;
+  background: var(--color-vendor2);
+}

@@ -1,11 +1,12 @@
-import React from "react";
+ import React from "react";
 import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon,
-  LinkedInIcon,
+  Facebook,
+  Instagram,
+  Twitter,
+  LinkedIn,
 } from "@mui/icons-material";
 import { Banner } from "..";
+import "./Footer.css"
 const Footer = () => {
   return (
     <div className="footer__container">
@@ -41,10 +42,10 @@ const Footer = () => {
         <div className="footer__links__item">
           <h2>join our community</h2>
           <span className="social">
-            <FacebookIcon className="social__icons" />
-            <InstagramIcon className="social__icons" />
-            <TwitterIcon className="social__icons" />
-            <LinkedInIcon className="social__icons" />
+            <Facebook   className="social__icons" />
+            <Instagram className="social__icons" />
+            <Twitter className="social__icons" />
+            <LinkedIn className="social__icons" />
           </span>
           <p>email newsletter</p>
         </div>

@@ -171,11 +171,10 @@ margin-bottom: 20em;
     left: 3em;
   }
   .vendor__text {
-      padding: .4em;
+      padding:0 2em;
   }
   .vendor__text p {
     margin-top: 1em;
-
     font-size: 12px;
     line-height: 150%;
   }

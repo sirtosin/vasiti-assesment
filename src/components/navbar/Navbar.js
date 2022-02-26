@@ -1,7 +1,12 @@
 import React from "react";
 import logo from "../../assets/logo.svg"
+import { Share } from "../../containers";
 import "./Navbar.css"
 const Navbar = () => {
+  const [showCard, setShowCard] = React.useState(false);
+  const displayCard = () => {
+    setShowCard(true);
+  }
   return (
     <div className="navbar__container">
       <div className="navbar__logo">
@@ -12,7 +17,7 @@ const Navbar = () => {
           <li>
             <a>about us</a>
           </li>
-          <li>
+          <li onClick={displayCard}>
             <a>stories</a>
           </li>
           <li>
@@ -26,6 +31,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {showCard && <Share />}
     </div>
   );
 };

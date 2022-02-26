@@ -5,7 +5,7 @@
 
 .testimony__content {
   width: 300px;
-  margin: 2em;
+  margin: 2em 1em;
 }
 .testimony__content h2 {
   font-family: var(--font-family);
