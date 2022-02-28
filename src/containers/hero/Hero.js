@@ -14,7 +14,6 @@ const Hero = () => {
       <div className="hero__image">
         <span className='ellipse'></span>
         <span className='img'>
-
         </span>
       </div>
     </div>

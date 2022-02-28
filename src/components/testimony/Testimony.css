@@ -1,11 +1,14 @@
 .testimony__conatiner {
   display: flex;
   flex-direction: column;
+  margin-left: -2em;
 }
 
 .testimony__content {
   width: 300px;
-  margin: 2em 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: -1em;
 }
 .testimony__content h2 {
   font-family: var(--font-family);
@@ -54,14 +57,23 @@ text-transform: uppercase;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: #474747;
+  color: hsl(0, 0%, 28%);
   margin-top: 3em;
+padding: 0 1em;
+
 }
 
 
 /* media queries */
+@media screen and (max-width: 1500px) {
+ 
+}
 
   @media screen and (max-width: 550px) {
+    .testimony__content{
+  margin-left: 3em;
+
+    }
    .testimony__content h2 {
   
 font-weight: 600;

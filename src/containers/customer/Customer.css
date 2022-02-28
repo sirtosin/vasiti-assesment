@@ -94,7 +94,19 @@
 }
 
 /* media queries */
-
+@media screen and (max-width: 1500px) {
+  .customer__image .ellipse {
+    width: 490px;
+    height: 490px;
+    left: 15px;
+    top: 60px;
+  }
+  .customer__image .img {
+    width: 436px;
+    height: 468px;
+    left: 15px;
+  }
+}
 @media screen and (max-width: 768px) {
   .customer__container {
     display: flex;

@@ -54,12 +54,12 @@
   align-items: center;
 }
 
-.footer__links__item .social .social__icons {
+/* .footer__links__item .social .social__icons {
   height: 25px;
   width: 25px;
   background: #ffffff;
   border-radius: 50%;
-}
+} */
 .footer__links__item:nth-child(2) {
   margin-top: 3em;
 }
@@ -117,9 +117,10 @@
 }
 @media screen and (max-width: 450px) {
   .footer__container {
-    top: 150em;
+    top: 163em;
     height: 1400px;
     width: 100%;
+
 
   }
   .footer__top {

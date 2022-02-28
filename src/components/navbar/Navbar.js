@@ -5,7 +5,7 @@ import "./Navbar.css"
 const Navbar = () => {
   const [showCard, setShowCard] = React.useState(false);
   const displayCard = () => {
-    setShowCard(true);
+    setShowCard((prev) => !prev);
   }
   return (
     <div className="navbar__container">

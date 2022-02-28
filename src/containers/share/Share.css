@@ -7,236 +7,352 @@
   left: 0;
   right: 0;
   bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.share__card aside{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.share__card aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .share__card .card {
   width: 600px;
   height: 600px;
-    padding: 2em;
-
+  padding: 2em;
 }
-.share__card .title span{
-    position: relative;
-    top: -.7em;
-    font-size: 2.5em;
-    font-weight: 800;
-    cursor: pointer;
-    color: red;
+.share__card .title span {
+  position: relative;
+  top: -0.7em;
+  font-size: 2.5em;
+  font-weight: 800;
+  cursor: pointer;
+  color: red;
 }
 
-.share__card .title h2{
+.share__card .title h2 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin: auto;
+}
+.share__card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+}
+
+.share__card form label {
+  font-family: var(--nav-font-family);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+
+  color: #676767;
+}
+
+.share__card form input {
+  width: 463px;
+  height: 62px;
+  margin-bottom: 10px;
+
+  background: #fefefe;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.share__card form textarea.textarea1 {
+  width: 463px;
+  height: 111px;
+  background: rgba(254, 254, 254, 0.3);
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 10px;
+  padding: 1em;
+}
+.share__card form textarea.textarea2 {
+  width: 463px;
+  height: 45px;
+  background: rgba(254, 254, 254, 0.3);
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 10px;
+  padding: 1em;
+}
+
+.share__card form textarea.textarea2::placeholder {
+  opacity: 0.5;
+}
+
+.share__card form .name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.share__card form .name input {
+  width: 221px;
+  height: 62px;
+  margin: 0 10px;
+  padding: 1em;
+}
+
+.share__container .checkbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.share__card form .checkbox span {
+  flex-basis: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.share__card form aside .radio {
+  width: 14px;
+  height: 14px;
+
+  border: 1px solid #676767;
+  margin: 5px;
+}
+.share__container .checkbox .title {
+  width: 370px;
+  height: 16px;
+  margin-left: -1em;
+  flex-basis: 68%;
+}
+.share__container .checkbox .title label {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+.share__card form button {
+  width: 253px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background: var(--color-vendor2);
+  box-shadow: 2px 8px 30px rgba(230, 83, 0, 0.18);
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  margin-left: 200px;
+}
+
+.share__card form .file {
+  position: relative;
+  margin-top: -6em;
+  margin-bottom: 1em;
+}
+
+.share__card form .file::before {
+  content: "";
+  position: relative;
+
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.share__card form .file::after {
+  content: attr(data-text);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3em;
+  width: 463px;
+  height: 62px;
+  background: #fefefe;
+  border: 1px solid #eaeaea;
+  pointer-events: none;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  z-index: 20;
+}
+
+.share__card form .file input {
+  opacity: 0;
+  position: relative;
+  top: 4em;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.share__card form .name input:focus,
+.share__card form textarea:focus {
+  outline: 1px solid var(--color-vendor2);
+  border: none;
+}
+
+.share__card .card .checkbox aside span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em;
+}
+.share__card .card .checkbox aside span input {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--color-vendor2);
+  margin: 0 0.3em;
+}
+
+.share__card .card2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  top: 3em;
+  padding: 2em;
+}
+
+.share__card .ellipse{
+  width: 155px;
+height: 155px;
+
+background: var(--bgcolor-vendor2);
+transform: matrix(1, 0, 0, -1, 0, 0);
+border-radius: 50%;
+}
+.share__card .card2 .ellipse p{
+  position: relative;
+  left: 0.4em;
+  top: .4em;
+  width: 72px;
+  height: 72px;
+font-weight: bold;
+font-size: 72px;
+line-height: 87px;
+text-align: center;
+letter-spacing: -0.02em;
+}
+
+.share__card .card2 h2{
+  
 font-family: var(--font-family);
 font-weight: bold;
 font-size: 28px;
 line-height: 34px;
-   margin-bottom: 10px;
 text-align: center;
 letter-spacing: -0.02em;
-margin: auto;
-}
-.share__card form{
-    display: flex;
-   flex-direction: column;
-    justify-content: center;
-    margin: 2em;
-
+color: #000000;
+margin-bottom: 1em;
 }
 
-.share__card form label{
-    
+.share__card .card2 p{
+  
 font-family: var(--nav-font-family);
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.04em;
-
-color: #676767;
-}
-
-.share__card form input{
-width: 463px;
-height: 62px;
-   margin-bottom: 10px;
-
-background: #FEFEFE;
-border: 1px solid #EAEAEA;
-box-sizing: border-box;
-border-radius: 8px;
-}
-.share__card form textarea.textarea1{
-width: 463px;
-height: 111px;
-background: rgba(254, 254, 254, 0.3);
-border:
- 1px solid #EAEAEA;
-box-sizing: border-box;
-border-radius: 8px;
-resize: none;
-   margin-bottom: 10px;
-padding: 1em;
-
-}
-.share__card form textarea.textarea2{
-width: 463px;
-height: 25px ;
-background: rgba(254, 254, 254, 0.3);
-border: 1px solid #EAEAEA;
-border-radius: 8px;
-resize: none;
-   margin-bottom: 10px;
-padding: .2em;
+font-size: 16px;
+line-height: 28px;
+text-align: center;
+color: #4A4A4A;
+margin-bottom: 1em;
 
 }
 
-.share__card form .name{
-    display: flex;
-    justify-content: space-between;
-    
-
-}
-
-
-.share__card form .name input{
-width: 221px;
-height: 62px;
-    margin: 0 10px;
-padding: 1em;
-
-}
-
-.share__container .checkbox{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-
-.share__card form .checkbox span{
-    flex-basis: 32%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-.share__card form aside .radio{
-    width: 14px;
-height: 14px;
-
-border: 1px solid #676767;
-margin: 5px;
-}
-.share__container .checkbox .title{
-width: 370px;
-height: 16px;
-margin-left: -1em;
-flex-basis: 68%;
-
-}
-.share__container .checkbox .title label{
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.04em;
-}
-
-
-.share__card form button{
-    width: 253px;
+.share__card .card2 button{
+  width: 253px;
 height: 70px;
-border: none;
-outline: none;
 background: var(--color-vendor2);
 box-shadow: 2px 8px 30px rgba(230, 83, 0, 0.18);
+  color: #fff;
 border-radius: 8px;
+border: none;
+outline: none;
+cursor: pointer;
 font-family: var(--font-family);
 font-weight: 600;
 font-size: 20px;
 line-height: 32px;
-color: #fff;
-cursor: pointer;
-letter-spacing: 0.02em;
-margin-left: 200px;
 }
+/* media queries */
+@media screen and (max-width: 768px) {
+ 
+  .share__card .card {
+    width: 500px;
+    height: 500px;
+    padding: 2em;
+  }
+  .share__card .title h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-.share__card form input[type="file"]{display: none;
-}
+  .share__card .card form input {
+    width: 200px;
+    height: 40px;
+  }
+  .share__card .card form textarea {
+    width: 400px;
+    height: 60px;
+  }
+  .share__card .card form textarea.textarea2 {
+    width: 400px;
+    height: 40px;
+    padding: 0.3em;
+  }
 
-.share__card form .file{
+  .share__card form .file::after {
+    width: 400px;
+    height: 50px;
+  }
+  .share__card form .file input {
+    top: 3em;
+  }
+  .share__card form .file img {
+    margin-top: 5em !important;
+    margin-left: 20em !important;
+  }
+  .share__card form .name input {
+    width: 185px;
+  }
+
+  .share__card form button {
+    width: 203px;
+    height: 50px;
+
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .share__card .card .checkbox {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 3em;
-    width: 463px;
-height: 62px;
-left: 32px;
-top: 163px;
-bottom: 10px;
-background: #FEFEFE;
-border: 1px solid #EAEAEA;
-box-sizing: border-box;
-border-radius: 8px;
-
-}
-
-.share_ _card form .name input:focus,
-.share__card form textarea:focus{
-outline: 1px solid var(
---color-vendor2);
-border: none;
-}
-
-.radio-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 0 6px;
-}
-
-.radio-item input[type='radio'] {
-  display: none;
-}
-
-.radio-item label {
-  color: #666;
-  font-weight: normal;
-}
-
-.radio-item label:before {
-  content: " ";
-  display: inline-block;
-  position: relative;
-  top: 5px;
-  margin: 0 5px 0 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 11px;
-  border: 1px solid var(--color-vendor2);
-  background-color: transparent;
-}
-
-.radio-item input[type=radio]:checked + label:after {
-  border-radius: 11px;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 7px;
-  left: 8px;
-  content: " ";
-  display: block;
-  background: var(--color-vendor2);
+    justify-content: center;
+  }
+  .share__card .card .checkbox aside span {
+    margin: 0;
+  }
 }
