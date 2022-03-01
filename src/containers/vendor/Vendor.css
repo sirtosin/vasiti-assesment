@@ -95,7 +95,19 @@
 }
 
 /* media queries */
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1400px) {
+ .vendor__image .ellipse {
+    width: 440px;
+    height: 490px;
+    left: 772px;
+  }
+  .vendor__image .img {
+    width: 436px;
+    height: 468px;
+    left: 773px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .vendor__image .ellipse {
     width: 440px;
     height: 490px;

@@ -1,2 +1,2 @@
 # vasiti testimonial
-### [live preview] ()
+### [live preview] (https://ecstatic-tereshkova-3654df.netlify.app/)

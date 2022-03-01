@@ -2,30 +2,37 @@ import React, { useState } from "react";
 import { Paper } from "@mui/material";
 import image from "../../assets/clip.png";
 import image2 from "../../assets/times.png";
-import "./Share.css";;
+import "./Share.css";
 const Share = () => {
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [story, setStory] = useState("");
+  const [school, setSchool] = useState("");
+  const [customer, setCustomer] = useState("");
+  const [vendor, setVendor] = useState("");
+
   const [showCard, setShowCard] = useState(true);
   const [dataText, setDataText] = useState("choose image");
-  const [show, setShow] = useState(false)
-  const [success, setSuccess] = useState(false)
-  
+  const [show, setShow] = useState(false);
+  const [success, setSuccess] = useState(false);
+
   const handleClick = (e) => {
     setDataText(e.target.files[0].name);
-    setShow(true)
-  }
+    setShow(true);
+  };
   const displayCard = () => {
     setShowCard(false);
   };
 
   const handleRemove = () => {
-    setDataText("choose image")
-    setShow(false)
-  }
+    setDataText("choose image");
+    setShow(false);
+  };
 
-const displaySuccess = () => {
-  setSuccess(true)
-  }
- 
+  const displaySuccess = () => {
+    setSuccess(true);
+  };
+
   return (
     <>
       {showCard && (
@@ -74,15 +81,24 @@ const displaySuccess = () => {
                     <aside className="name">
                       <span>
                         <label>firstname</label>
-                        <input type="text" />
+                        <input
+                          type="text"
+                          onChange={(e) => setFirstname(e.target.value)}
+                        />
                       </span>
                       <span>
                         <label> last name</label>
-                        <input type="text" />
+                        <input
+                          type="text"
+                          onChange={(e) => setLastname(e.target.value)}
+                        />
                       </span>
                     </aside>
                     <label> Share your story</label>
-                    <textarea className="textarea1" />
+                    <textarea
+                      className="textarea1"
+                      onChange={(e) => setStory(e.target.value)}
+                    />
 
                     <section className="checkbox">
                       <label className="title">
@@ -95,6 +111,7 @@ const displaySuccess = () => {
                             id="customer"
                             name="ritem"
                             value="ropt1"
+                            onChange={(e) => setCustomer(e.target.checked)}
                           />
                           <label for="customer">customer </label>
                         </span>
@@ -105,13 +122,18 @@ const displaySuccess = () => {
                             id="vendor"
                             name="ritem"
                             value="ropt2"
+                            onChange={(e) => setVendor(e.target.checked)}
                           />
                           <label for="vendor">vendor</label>
                         </span>
                       </aside>
                     </section>
                     <label>City or Higher Institution (for Students)</label>
-                    <textarea className="textarea2" placeholder="optional" />
+                    <textarea
+                      className="textarea2"
+                      placeholder="optional"
+                      onChange={(e) => setSchool(e.target.value)}
+                    />
                     <button onClick={displaySuccess}>Share your story</button>
                   </form>
                 </>
@@ -125,4 +147,3 @@ const displaySuccess = () => {
 };
 
 export default Share;
-

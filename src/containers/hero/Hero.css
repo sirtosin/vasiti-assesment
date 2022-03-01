@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 4em;
+  padding: 1em 3em;
 }
 
 .hero__text {
@@ -40,7 +40,7 @@
   position: absolute;
   width: 611px;
   height: 611px;
-  left: 662px;
+  left: 712px;
   top: 209px;
   background: #fff8f5;
   border-radius: 50%;
@@ -51,7 +51,7 @@
   position: absolute;
   width: 536px;
   height: 568px;
-  left: 793px;
+  left: 743px;
   top: 158px;
   background-image: url(../../assets/Testimonial-image.png);
   background-repeat: no-repeat;
@@ -60,7 +60,19 @@
 }
 
 /* media queries */
-@media screen and (max-width: 1500px) {
+/* @media screen and (min-width: 1400px) {
+ .hero__image .ellipse {
+    width: 440px;
+    height: 490px;
+    left: 72px;
+  }
+  .hero__image .img {
+    width: 436px;
+    height: 468px;
+    left: 733px;
+  }
+} */
+@media screen and (max-width: 1200px) {
   .hero__image .ellipse {
     width: 440px;
     height: 490px;
